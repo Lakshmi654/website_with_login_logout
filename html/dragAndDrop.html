@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+  background-color: cadetblue;
+}
+
+        .dashboard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-list {
+  width: 30%;
+  min-height: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: move;
+}
+
+.list-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-description {
+  margin-top: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+  <div class="task-list" id="todo-list">
+    <div class="card" draggable="true" id="card1" ondragstart="drag(event)">
+      <div class="card-title">Task 1</div>
+      <div class="card-description">Description 1</div>
+    </div>
+    <div class="card" draggable="true" id="card2" ondragstart="drag(event)">
+      <div class="card-title">Task 2</div>
+      <div class="card-description">Description 2</div>
+    </div>
+  </div>
+
+  <div class="task-list" id="in-progress-list" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="list-title">In Progress</div>
+  </div>
+
+  <div class="task-list" id="completed-list" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="list-title">Completed</div>
+  </div>
+</div>
+
+<script>
+    function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drag(event) {
+  event.dataTransfer.setData("text/plain", event.target.id);
+}
+
+function drop(event) {
+  event.preventDefault();
+  var cardId = event.dataTransfer.getData("text/plain");
+  var card = document.getElementById(cardId);
+  event.target.appendChild(card);
+}
+
+</script>
+</body>
+</html>

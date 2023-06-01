@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+/* sign up page  */
+
+.signup{
+    background-color: white;
+    width: 50%;
+}
+.signup h3,h5{
+    text-align: center;
+}
+.form_box{
+    margin-left: 50px;
+}
+
+/* login page  */
+
+.login{
+background-color: white;
+    width: 50%;
+    border-radius: 10px;
+
+}
+.login h4,h5{
+    text-align: center;
+}
+
+/* forget password page  */
+.forget{
+    background-color: white;
+        width: 50%;
+        border-radius: 10px;
+}
+
+/* websit style  */
+
+.nav_img img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    margin-left: 30px;
+    }
+.nav_ul{
+    margin-left: 500px;
+    /* background-color: aqua; */
+}
+.nav_ul ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav_ul ul li a{
+    font-size: 18px;
+    font-weight: bold;
+    
+
+}
+.nav_ul ul li :hover{
+   background-color: orange;
+   border-radius: 10px;
+}
+
+.nav_form{
+    margin-left: 40px;
+}
+.nav_form button{
+    border-radius: 100px;
+    font-size: 15px;
+    padding: 15px;
+    background-color:rgb(18, 6, 2);
+    color: white;
+    font-weight: bold;
+}
+
+/* banner */
+.banner{
+    background-image: url(../image/nature.jpg);
+    background-size: cover;
+}
+.mask_para h5,h1{
+    color:brown;
+}
+.icon{
+    display: inline;
+    font-size: 30px;
+   
+   
+}
+.icon i{
+    margin-top: 20px;
+border: 2px solid orange;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+
+/* infromation section  */
+.information{
+    display: flex;
+    gap: 500px;
+}
+.inf{
+    display: inline;
+    min-height: 100px;
+    min-width: 100px;
+    background-image: url(../image/water\ play.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 5px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+.download_cv{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.information img{
+    margin-left: 100px;
+}
+.download_cv p{
+    
+ font-size: 20px;
+}
+.download_cv button{
+    background-color: rgb(230, 144, 112);
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+
+
+
+/* service 
+ */
+.service{
+    padding-top: 130px;
+}
+.service_para h6,h4,p{
+    text-align: center;
+}
+ .service i{
+   font-size: 50px;
+   color: orangered;
+   padding-top: 60px;
+   margin-left: 50px;
+   padding-bottom: 20px;
+ 
+ }
+ .service i:hover{
+ color: white;
+ }
+
+ .service_icon div{
+    border: 2px solid rgb(208, 203, 203);
+    min-height: 100px;
+    box-shadow: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+ 
+ 
+ }
+  .service_icon div:hover {
+      background-color: rgb(255, 89, 0);
+      color: white;
+  }
+ .service_icon{
+    gap: 80px;
+    margin-left: 100px;
+ }
+
+ /* progress bar 
+  */
+  .progress_bar{
+    padding-top: 150px;
+  }
+ .progress_bar_para h5,
+  h4,
+  p {
+      text-align: center;
+  }
+  .pro_bar_f{
+     margin-bottom: 100px;
+  }
+
+
+
+  /* card  */
+.card_section{
+    padding-top: 100px;
+    min-height: 500px;
+}
+  .card_para h5,
+  h4,
+  p {
+      text-align: center;
+  }
+  .card_img {
+    gap: 100px;
+  margin-left: 40px;
+  margin-top: 50px;
+  }
+  .card_img img{
+    height: 200px;
+    
+  }
+
+
+  /* Hire me  */
+  .hire{
+    background-color: rgb(245, 127, 84);
+    width: 80%;
+   margin-left: 100px;
+   margin-top: 100px;
+   border: 2px solid black;
+   border-radius: 10px;
+   
+  }
+  .hire_text h2{
+   color: white;
+   font-weight: bolder;
+   font-family: sans-serif;
+   padding-top: 50px;
+   padding-left: 20px;
+   padding-bottom: 10px;
+
+  }
+  .hire_text pre{
+    color: white;
+        font-weight: bolder;
+        font-family: sans-serif;
+        font-size: 15px;
+        padding-left: 20px;
+  }
+  .hire_text button{
+    margin-top: 50px;
+    font-size: 20px;
+    padding:10px;
+    border-radius: 50px;
+  }
+
+
+  /* get in touch  */
+  .touch{
+    width: 80%;
+    margin-left: 150px;
+    padding-top: 100px;
+    /* border: 1px solid black; */
+    box-shadow: 5px;
+  }
+  .touch_icon  i{
+    font-size: 30px;
+    padding-left: 10px;
+    padding-top: 20px;
+    border: 2px solid orange;
+    padding: 10px;
+    border-radius: 100%;
+  }
+  .footer_section{
+    padding-top: 100px;
+  }
