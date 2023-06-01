@@ -63,5 +63,5 @@ function forget(){
  
 
     localStorage.setItem('password',conformpassword )
-    window.open('http://127.0.0.1:5500/WEBSITE/html/login.html')
+    window.open('http://127.0.0.1:5500/website_with_login_logout/html/login.html')
 }
